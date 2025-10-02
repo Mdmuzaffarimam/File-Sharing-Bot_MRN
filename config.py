@@ -15,11 +15,11 @@ DB_URL = os.environ.get("DB_URL", "mongodb+srv://samanthasaintf0:samanthasaintf0
 DB_NAME = os.environ.get("DB_NAME", "samanthasaintf0")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002358430928"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002761395296 -1002745555397 -1002232443823"))
 
 
-FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "600")) # auto delete in seconds
+FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "1500")) # auto delete in seconds
 
 
 PORT = os.environ.get("PORT", "8080")
@@ -29,7 +29,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 try:
     ADMINS=[6848088376]
-    for x in (os.environ.get("ADMINS", "6848088376").split()):
+    for x in (os.environ.get("ADMINS", "6139759254 7473323779").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
